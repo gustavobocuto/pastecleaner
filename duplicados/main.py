@@ -1,7 +1,7 @@
+from buscar_arquivos import buscar_arquivos_duplicados
+from buscar_registros import buscar_registros_duplicados
+
 import os
-import sys
-from .buscar_arquivos import buscar_arquivos_duplicados
-from .buscar_registros import buscar_registros_duplicados
 
 def buscar_duplicados(diretorio_inicial):
     # Buscar arquivos duplicados
@@ -28,13 +28,6 @@ def buscar_duplicados(diretorio_inicial):
 
 # Executar a busca
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        diretorio = sys.argv[1]
-    else:
-        diretorio = input("Por favor, insira o caminho do diretório que deseja analisar: ")
-    
-    if not os.path.isdir(diretorio):
-        print("O caminho fornecido não é um diretório válido.")
-        sys.exit(1)
-    
+    # Substitua pelo caminho do diretório que deseja testar
+    diretorio = "/caminho/para/o/diretorio"  
     buscar_duplicados(diretorio)

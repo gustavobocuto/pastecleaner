@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import os
-from duplicados.buscar_arquivos import buscar_arquivos_duplicados
-from duplicados.buscar_registros import buscar_registros_duplicados
+from buscar_arquivos import buscar_arquivos_duplicados
+from buscar_registros import buscar_registros_duplicados
+
 import threading
 
 class Aplicacao:
